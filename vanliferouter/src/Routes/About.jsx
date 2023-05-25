@@ -4,7 +4,7 @@ import aboutImg from '../assets/about-img.png'
 export default function About(){
     return (
         <div className="about-main">
-            <div className="about-img"></div>
+            <img src={aboutImg} className="about-img"></img>
             <div className="about-content">
                 <h1>Don't squeeze in a sedan when you could relax in a van.</h1>
                 <p>Our mission is to enliven your road trip with the perfect travel van rental. Our vans are recertified before each trip to ensure your travel plans can go off without a hitch.
