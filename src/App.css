@@ -70,11 +70,21 @@
   margin-top: 2rem;
 }
 
-.home-content a {
+.home-content-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 5rem;
-  padding: 1rem 12rem;
+  height: 5vh;
+  min-height: 5vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #FF8C38;
   text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #FFF7ED;
 }
 
 /* About */
@@ -88,7 +98,7 @@
   width: 100vw;
   height: 77vh;
   background-color: #FFF7ED;
-  ;
+  
 }
 
 .about-content {
@@ -105,26 +115,28 @@
 }
 
 .about-content h1 {
-  margin-top: 1rem;
+  margin: 1rem 0;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 2rem;
 }
 .about-content p {
-  margin-top: 1rem;
+  margin: 0.5rem 0;
   font-weight: 500;
 }
 
 
 .about-img {
- width: 100%;
+  margin-top: 5rem;
+  width: 75%;
 }
 
 .about-explore {
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   background-color: #FFCC8D;
-  height: 30vh;
-  width: 75%;
+  min-height: 13vh;
+  max-height: 30vh;
+  width: 75vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,23 +146,27 @@
 .about-explore-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 75%;
   height: 125px;
+
 }
 
 .about-explore-content h3 {
   color: #161616;
   font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
-.about-explore-content a {
+.explore-link {
   padding: 0.5rem;
   background-color: black;
-  width: 35%;
+  color: #FFF7ED;
+  text-decoration: none;
+  min-width: 150px;
+  max-width: 175px;
   margin-top: 0.5rem;
   border-radius: 10px;
   display: flex;
@@ -159,13 +175,80 @@
  
 }
 
+/* Vans */
+
+.vans-main {
+  height: 100vh;
+  width: 90vw; 
+  color: white; 
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.van-tile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 34px;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.van-tile a{
+  text-decoration: none;
+  color: white; 
+}
+
+.van-info-sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.van-img {
+  max-width: 200px;
+}
+
+.type {
+  max-height: 1rem;
+  
+}
+
+/* Van Detail */
+.detail-main-container{
+height: 100vh;
+width: 100vw;
+margin-top: 10rem;
+
+}
+
+.detail-main {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-img {
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 5px;
+  margin-block: 47px;
+}
 
 
 
 /* Footer */
 
 .footer {
-  height: 6rem;
+  height: 4rem;
   width: 100%;
   background-color: #252525;
   display: flex;
