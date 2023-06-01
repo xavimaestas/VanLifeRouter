@@ -9,7 +9,7 @@ export default function Vans(){
         fetch("/api/vans")
         .then(res => res.json())
         .then(data => setVans(data.vans))
-    })
+    }, [])
 
 
 
@@ -41,6 +41,7 @@ export default function Vans(){
 
     return (
         <div className="vans-main">
+            <h1>Explore our van options</h1>
             <div className="van-tile-container">
             {vanElements}
             </div>
