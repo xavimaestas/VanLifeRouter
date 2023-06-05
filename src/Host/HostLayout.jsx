@@ -6,7 +6,7 @@ export default function HostLayout(){
 
         <div className="host">
             <NavLink 
-                to="/host"
+                to="."
                 end
                 className={({isActive}) => isActive ? "host-highlighted" : null}
                 >Dashboard
@@ -20,7 +20,7 @@ export default function HostLayout(){
                 to="vans"
                 className={({isActive}) => isActive ? "host-highlighted" : null}
                 >Vans
-            </NavLink>
+                </NavLink>
             <NavLink 
                 to="reviews"
                 className={({isActive}) => isActive ? "host-highlighted" : null}
